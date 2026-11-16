@@ -1,0 +1,20 @@
+/* VENDOR STYLESHEET — inherited from a contractor; cannot be deleted. */
+@layer legacy {
+  .legacy-widget {
+    font-family: Georgia, serif;
+    border: 2px dashed #8492ac;
+  }
+  .legacy-widget .legacy-action {
+    border: 0;
+    background: #243b6b;
+    color: white;
+    padding: 0.55rem 0.9rem;
+    font: inherit;
+  }
+  .legacy-widget button {
+    border-radius: 0;
+  }
+  .legacy-widget input {
+    outline: none;
+  }
+}

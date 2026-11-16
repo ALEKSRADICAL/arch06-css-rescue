@@ -1,0 +1,29 @@
+/* INTERACTION STATES */
+.ui-button:hover { transform: translateY(-1px); }
+.ui-button--primary:hover { background: var(--color-accent-hover); }
+.ui-button--secondary:hover, .ui-button--ghost:hover { background: var(--color-surface-alt); }
+.ui-button--danger:hover { background: var(--color-danger-hover); }
+.ui-button:focus-visible { outline: 2px solid var(--color-focus); outline-offset: 2px; }
+.ui-button:active { transform: translateY(0); }
+.ui-button:disabled { opacity: .45; pointer-events: none; }
+
+/* Ошибка по aria-invalid */
+.ui-field:has(input[aria-invalid="true"]) input {
+  border-color: var(--color-danger);
+  background: var(--color-danger-bg);
+}
+.ui-field:has(input[aria-invalid="true"]) .ui-field__hint {
+  color: var(--color-danger);
+}
+
+.ui-card .ui-tag { padding-inline: 1rem; }
+.ui-alert { transition: background-color 240ms, color 240ms; }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms ;
+    animation-iteration-count: 1 ;
+    transition-duration: 0.01ms ;
+    scroll-behavior: auto ;
+  }
+}
